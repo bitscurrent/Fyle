@@ -4,10 +4,318 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script src="./main.js" defer></script>
     <title>Fyle Internship</title>
   </head>
   <body>
-    <h1>Testing</h1>
+    <div class="firstPage">
+      <div class="womanPic">
+        <img src="./assets/01.jpg" alt="Woman in Red Hat" />
+      </div>
+      <div class="textContent">
+        <div class="topHeading">AWARD WINNING</div>
+        <div class="mainHeading">DIGITAL MARKETING AGENCY</div>
+        <div class="paragraph">
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante et elit fringilla ac at purus. Morbi sed lacus
+          nec risus finibus feugiat et fermentum.
+        </div>
+        <button class="contactUsButton" id="contactUsButton">CONTACT US</button>
+      </div>
+    </div>
+
+    <!-- Pop-up Form -->
+    <div id="popupForm" class="popup-form">
+      <div class="form-container">
+        <span class="close-button" id="closeButton">&times;</span>
+        <form action="https://getform.io/f/pbygzjob" method="post">
+          <div style="font-size: 18px; font-weight: 780">Talk to us</div>
+          <div class="email">
+            <label for="email" style="margin-bottom: 0px">Work email</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Work email*"
+              required
+              style="
+                outline: none;
+                border: none;
+                margin-bottom: 0px;
+                margin-top: 0px;
+              "
+            />
+            <hr style="margin-top: 0px" />
+          </div>
+
+          <div class="name">
+            <div class="first-name">
+              <label for="firstName">First name</label>
+              <br />
+              <input
+                class="name-input"
+                type="text"
+                placeholder="First name*"
+                name="firstName"
+                id="firstName"
+                required
+                style="outline: none; margin-bottom: 0px; border: none"
+              />
+              <hr
+                class="horizontal-rule"
+                style="width: 174px; margin-top: 0px"
+              />
+            </div>
+
+            <div class="last-name">
+              <label for="lastName">Last name</label>
+              <br />
+              <input
+                type="text"
+                placeholder="Last name*"
+                name="lastName"
+                id="lastName"
+                required
+                style="outline: none; border: none; margin-bottom: 0px"
+              />
+              <hr
+                class="horizontal-rule"
+                style="width: 175px; margin-top: 0px"
+              />
+            </div>
+          </div>
+          <div class="tnc">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              required
+              style="outline: 0.3px solid brown; border-radius: 2px"
+            />
+            <p class="tnc-paragraph">
+              I agree to Fyle's terms and conditions, and provide consent to
+              send me communication.
+            </p>
+          </div>
+          <input class="submit-button" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <div class="secondPage">
+      <div class="secondaryHeading">WHAT WE DO</div>
+      <div class="second-title-container">
+        <div class="secondHeading secondpage-secondheading-box">
+          SERVICES PROVIDE FOR YOU
+        </div>
+        <div class="second-paragraph">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem porro vitae, ratione nulla, nesciunt consequatur
+            rerum illo modi eius quam debitis suscipit iusto corporis labore et
+            aperiam natus voluptatibus commodi quo libero!
+          </p>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="image-item">
+          <img src="./assets/02.jpg" alt="girl in muffler" />
+          <a href="https://www.fylehq.com/" target="_blank"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="image-item">
+          <img src="./assets/03.jpg" alt="fragrance bottle" />
+          <a href="https://www.fylehq.com/" target="_blank"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="image-item">
+          <img src="./assets/04.jpg" alt="web development page" />
+          <a href="https://www.fylehq.com/" target="_blank"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="image-item">
+          <img src="./assets/04.jpg" alt="edible items in basket" />
+          <a href="https://www.fylehq.com/" target="_blank"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="third-page">
+      <div class="secondaryHeading" style="text-align: center">
+        WHY CHOOSE US
+      </div>
+      <div class="secondHeading" style="text-align: center">
+        WHY WE ARE BEST
+      </div>
+
+      <div class="why-choose-us">
+        <div>
+          <i class="bi bi-bullseye"></i>
+          <p class="why-choose-us-heading">Clarified Vision & Target</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eum
+            molestias eveniet voluptatum
+          </p>
+        </div>
+        <div>
+          <i class="bi bi-speedometer"></i>
+
+          <p class="why-choose-us-heading">High Performance</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eum
+            molestias eveniet voluptatum
+          </p>
+        </div>
+        <div>
+          <i class="bi bi-shield-lock"></i>
+
+          <p class="why-choose-us-heading">Maintain Security</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eum
+            molestias eveniet voluptatum
+          </p>
+        </div>
+        <div>
+          <i class="bi bi-bootstrap-reboot"></i>
+          <p class="why-choose-us-heading">Better Strategy & Quality</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eum
+            molestias eveniet voluptatum
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fourth-page">
+      <div class="secondaryHeading" style="text-align: center">OUR PROJECT</div>
+
+      <div class="secondHeading" style="text-align: center">
+        WHY WE ARE BEST
+      </div>
+
+      <div class="image-text-container">
+        <img
+          style="width: 60%; height: auto"
+          src="./assets/05.jpg"
+          alt="fresh fruits in plate"
+        />
+
+        <div class="text-container" style="background-color: #f6f6f6">
+          <div>
+            <h3>Genderless Kei - Japan's Hot</h3>
+            <p>
+              Set to launch on the manufacturer's new A330neo aircraft in 2017,
+              it is offering lots of
+            </p>
+          </div>
+          <div>
+            <h3>Better Strategy & Quality</h3>
+            <p style="background-color: #ff3146">
+              Set to launch on the manufacturer's new A330neo aircraft in 2017,
+              it is offering lots of
+            </p>
+          </div>
+          <div>
+            <h3>Genderless Kei - Japan's Hot</h3>
+            <p>
+              Set to launch on the manufacturer's new A330neo aircraft in 2017,
+              it is offering lots of
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="company-status">
+      <div class="secondaryHeading" style="text-align: center">
+        EXPERTS GROWTH
+      </div>
+      <div class="secondHeading" style="text-align: center">
+        OUR COMPANY GROWTH
+      </div>
+      <div class="company-growth">
+        <div class="satisfied-customer growth-item">
+          <i class="bi bi-heart-fill" style="color: red"></i>
+          <h4>199+</h4>
+          <p class="text-box">Satisfied Customer</p>
+        </div>
+
+        <div class="days-of-operation growth-item">
+          <i class="bi bi-clock-fill" style="color: red"></i>
+
+          <h4>1591+</h4>
+          <p class="text-box">Days of Operation</p>
+        </div>
+
+        <div class="complete-project growth-item">
+          <i class="bi bi-check-circle-fill" style="color: red"></i>
+          <h4>283+</h4>
+          <p class="text-box">Complete Project</p>
+        </div>
+
+        <div class="win-awards growth-item">
+          <i class="bi bi-award" style="color: red"></i>
+          <h4>75+</h4>
+          <p class="text-box">Win Awards</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback-page">
+      <div
+        class="secondaryHeading"
+        style="text-align: center; margin-top: 15px; margin-bottom: 10px"
+      >
+        CLIENT'S FEEDBACK
+      </div>
+      <div
+        class="secondHeading"
+        style="text-align: center; margin-bottom: 15px"
+      >
+        PEOPLE SAY'S ABOUT US !
+      </div>
+
+      <div class="para-coo">
+        <p>
+          Jannat Tumpa standard chunk of Lauren Epson used since the 1500 is
+          reproduced below for those interested. Sections bonorm at moloum
+          original.
+        </p>
+        <br />
+        <div class="COO-feedback">
+          <span style="color: #ff3146">JANNAT TUMPA</span>
+          <div>-COO, AMERIMAR ENTERPRISES, INC.</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div><img src="./assets/st__logo_11-min.webp" alt="" /></div>
+      <div><img src="./assets/clientlogo-two.png" alt="" /></div>
+      <div><img src="./assets/st__logo_12-min.png" alt="" /></div>
+      <div><img src="./assets/st__logo_11-min.webp" alt="" /></div>
+      <div><img src="./assets/st__logo_07-min.png" alt="" /></div>
+      <div><img src="./assets/st__logo_09-min.png" alt="" /></div>
+    </footer>
   </body>
 </html>
